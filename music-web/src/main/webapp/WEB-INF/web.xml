@@ -6,7 +6,7 @@
     xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">    
     
     <listener>
-        <listener-class>org.ritz.music.web.config.DataSourceConfigurator</listener-class>
+        <listener-class>be.xlair.music.web.config.DataSourceConfigurator</listener-class>
     </listener>
 
     <welcome-file-list>
