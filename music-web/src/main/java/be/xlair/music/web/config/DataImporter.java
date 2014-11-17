@@ -18,22 +18,27 @@ import be.xlair.music.service.MusicServiceException;
 import be.xlair.music.service.TrackService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.web.context.ServletContextAware;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 /**
  *
  * @author hans
  */
-public class DataImporter implements Serializable, ServletContextAware{
+@Component
+public class DataImporter implements Serializable{
     
     private static final String DATA_PATH = "/WEB-INF/tracks.csv";
     
     private static final Logger LOG = LoggerFactory.getLogger(DataImporter.class);
     
+    @Autowired
     private TrackService trackService;
     
+    @Autowired
     private ArtistService artistService;
 
+    @Autowired
     private ServletContext servletContext;
     
     public DataImporter(){}
@@ -102,7 +107,6 @@ public class DataImporter implements Serializable, ServletContextAware{
         this.artistService = artistService;
     }
 
-    @Override
     public void setServletContext(ServletContext sc) {
         this.servletContext = sc;
     }

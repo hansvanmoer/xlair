@@ -5,7 +5,6 @@
 package be.xlair.music.web.data;
 
 import java.io.Serializable;
-import be.xlair.music.facet.Facet;
 
 /**
  *
