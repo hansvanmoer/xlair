@@ -16,15 +16,18 @@ public class SearchRequest implements Serializable{
     
     private Integer firstIndex;
     private Integer fetchSize;
+    private String filter;
 
     public SearchRequest() {
         this.firstIndex = 0;
         this.fetchSize = 0;
+        this.filter = null;
     }
 
-    public SearchRequest(Integer firstIndex, Integer fetchSize) {
+    public SearchRequest(Integer firstIndex, Integer fetchSize, String term) {
         this.firstIndex = firstIndex;
         this.fetchSize = fetchSize;
+        this.filter = term;
     }
     
     public Integer getFirstIndex() {
@@ -41,6 +44,14 @@ public class SearchRequest implements Serializable{
 
     public void setFetchSize(int fetchSize) {
         this.fetchSize = fetchSize;
+    }
+
+    public String getFilter() {
+        return filter;
+    }
+
+    public void setFilter(String filter) {
+        this.filter = filter;
     }
     
 }
