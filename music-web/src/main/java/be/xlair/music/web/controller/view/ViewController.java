@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package be.xlair.music.web.view;
+package be.xlair.music.web.controller.view;
 
 import javax.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;

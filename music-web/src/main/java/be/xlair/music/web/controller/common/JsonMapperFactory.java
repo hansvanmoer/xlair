@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package be.xlair.music.web.controller;
+package be.xlair.music.web.controller.common;
 
 import org.codehaus.jackson.map.ObjectMapper;
 import org.springframework.beans.factory.InitializingBean;

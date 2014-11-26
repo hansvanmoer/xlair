@@ -11,7 +11,7 @@ import java.util.List;
  *
  * @author hans
  */
-public class QueryResult<T extends Serializable> {
+public class QueryResult<T extends Serializable> implements Serializable {
     
     private List<T> results;
     private int totalResultCount;

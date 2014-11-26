@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package be.xlair.music.web.controller;
+package be.xlair.music.web.controller.common;
 
 import au.com.bytecode.opencsv.CSVReader;
 import java.io.IOException;
