@@ -11,7 +11,7 @@
 
     <bean name="persistenceConfiguration" class="be.xlair.music.web.config.HibernateConfigurator"/>
     
-    <bean name="sessionFactory" class="org.hibernate.SessionFactory" factory-bean="persistenceConfiguration" init-method="getSessionFactory"/>
+    <bean name="sessionFactory" factory-bean="persistenceConfiguration" factory-method="getSessionFactory"/>
     
     <bean class="be.xlair.music.service.hibernate.HibernateUserService">
         <property name="sessionFactory">

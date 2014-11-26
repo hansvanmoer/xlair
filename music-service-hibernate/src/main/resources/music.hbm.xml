@@ -12,7 +12,7 @@
     <property column="birthDate" name="birthDate" not-null="true" type="date"/>
     <property column="state" name="state" not-null="true">
       <type name="org.hibernate.type.EnumType">
-        <param name="enumClass">org.ritz.music.model.UserState</param>
+        <param name="enumClass">be.xlair.music.model.UserState</param>
       </type>
     </property>
     <property name="answer" column="answer" not-null="true" type="int"/>
@@ -36,7 +36,7 @@
     <property column="rank" name="rank" not-null="true" type="int"/>
   </class>
   <class name="Vote" table="vote">
-    <composite-id class="org.ritz.music.model.VoteKey" name="voteId"> 
+    <composite-id class="be.xlair.music.model.VoteKey" name="voteId"> 
       <key-property column="user_id" name="userId" type="long"/>
       <key-property column="track_id" name="trackId" type="long"/>
     </composite-id>

@@ -5,7 +5,7 @@
     <session-factory>
         <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
-        <property name="hibernate.connection.datasource">java:/comp/env/jdbc/tracks</property>
+        <property name="hibernate.connection.datasource">java:/comp/env/jdbc/xlair</property>
         <property name="hibernate.hbm2ddl.auto">update</property>
         <!-- List of XML mapping files -->
         <mapping resource="music.hbm.xml"/>
